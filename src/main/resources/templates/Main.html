@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
@@ -39,46 +40,82 @@
             rel="stylesheet"
     />
 
-    <title>Home</title>
     <style>
+        body {
+            background-color: #f5f5dc; /* fundo bege */
+            margin: 0;
+            padding: 0;
+            font-family: baskerville;
+        }
+        .ft img {
+            background-size: cover; /* ajusta o tamanho da imagem para cobrir toda a tela */
+            background-repeat: no-repeat; /* evita a repetição da imagem */
+            background-position: center; /* posiciona a imagem no centro da tela */
+            height: 300px; /* altura da imagem */
+            width: 400px; /* largura da imagem */
+            margin: 0 auto; /* centraliza a imagem horizontalmente */
+            border-radius: 5px;
+        }
+
+        .container {
+            background-color: white; /* Define a cor de fundo do contêiner */
+            border-radius: 10px; /* Adiciona um pouco de borda arredondada */
+            padding: 20px; /* Adiciona algum espaço interno */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra suave */
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
         }
-        th, td {
+
+        img {
+            display: flex;
+        }
+
+        th,
+        td {
             border: 1px solid white;
             padding: 8px;
             text-align: left;
+            font-size: 20px;
         }
     </style>
+    <title>Home</title>
 </head>
 <body>
 <div class="container">
-    <h1 class="text-center mt-5">Equipe 3 B.A</h1>
-    <h3 class="text-center mt-1">
-        Berchola, Lucas fan de galeto, Vanessa Trator, Tobolas Da Silva, Renan
-        Xerequinha e Gustavo .TXT
-    </h3>
+    <h1 class="text-center mt-3">Sarau</h1>
+    <h2 class="text-center mt-2">Graciliano Ramos</h2>
+    <div class="ft">
+        <img src="foto1.jpg" alt="Imagem">
+    </div>
+
+    <h2 class="text-center mt-5">Equipe 3 B.A</h2>
+    <h5 class="text-center mt-4">
+        Lucas Bertol, Lucas Fuline, Vanessa Carletto, Tobias Da Silva, Renan
+        Cavejon e Gustavo Pasqualin
+    </h5>
     <div class="row">
         <div class="col-sm-12 d-flex justify-content-center">
             <table class="table tableT">
                 <thead>
                 <tr>
-                    <th class="texte-center">Topicos</th>
+                    <th class="text-center">Tópicos</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <td>Biografia</td>
+                    <td class="text-center">Biografia - Cartaz físico</td>
                 </tr>
                 <tr>
-                    <td>Principais Obras</td>
+                    <td class="text-center">Principais Obras - Livro 3D</td>
                 </tr>
                 <tr>
-                    <td>Caracteristicas</td>
+                    <td class="text-center">Características - Cartaz físico</td>
                 </tr>
                 <tr>
-                    <td>Curiosidades</td>
+                    <td class="text-center">Curiosidades - Livro 3D</td>
                 </tr>
                 </tbody>
             </table>
